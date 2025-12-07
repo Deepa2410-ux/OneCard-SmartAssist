@@ -1,0 +1,178 @@
+/* ---------- MAIN CONTAINER ---------- */
+.chat-container {
+  width: 420px;
+  height: 85vh;
+  background: #ffffff;
+  border-radius: 18px;
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 18px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* ---------- HEADER ---------- */
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: linear-gradient(135deg, #4f46e5, #6d28d9);
+  color: white;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.online {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+/* ---------- QUICK ACTION BUTTONS ---------- */
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 8px 12px;
+  background: #f4f5ff;
+}
+
+.qa-btn {
+  background: #e6e7ff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.qa-btn:hover {
+  background: #d1d3ff;
+}
+
+/* ---------- MESSAGES AREA ---------- */
+.chat-box {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fafafa;
+}
+
+.msg {
+  max-width: 75%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 12px;
+  line-height: 1.3;
+  white-space: pre-line;
+}
+
+.msg.user {
+  background: #4f46e5;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.msg.bot {
+  background: #e7e7e7;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+/* PDF clickable text */
+.msg:hover {
+  opacity: 0.9;
+}
+
+/* ---------- INPUT AREA ---------- */
+.input-section {
+  padding: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #ddd;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.send-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---------- MICROPHONE ---------- */
+.mic-btn {
+  background: #ff006e;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+.mic-btn.recording {
+  background: #e60056;
+}
+
+/* ---------- WAVEFORM ---------- */
+.waveform {
+  width: 4px;
+  height: 4px;
+  background: #ff006e;
+  border-radius: 4px;
+  display: none;
+  align-self: center;
+}
+
+/* ---------- DASHBOARD OVERLAY ---------- */
+.dash-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dash-card {
+  background: white;
+  width: 360px;
+  padding: 18px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+.close-btn {
+  background: #ff006e;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+}
