@@ -3,7 +3,6 @@ OneCard SmartAssist
 OneCard SmartAssist is a GenAI‑powered credit card assistant (React + FastAPI) that lets users manage their OneCard via chat and voice — check balance, view transactions, download statements, pay bills via QR/UPI, and track or block the card.
 ---
 demo video link:-https://drive.google.com/drive/folders/16NH6icAv-hCsxNHZdBbyCoUpEUzCfV9l
-![Screenshot_7-12-2025_224954_localhost](https://github.com/user-attachments/assets/e12930a6-3641-4715-a025-0cd713510fb3)
 ## Features
 
 - **Chat + voice interface** with a virtual credit‑card agent  
